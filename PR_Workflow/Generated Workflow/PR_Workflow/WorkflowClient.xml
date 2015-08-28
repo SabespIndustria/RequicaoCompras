@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Workflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="WorkflowClient.xsd" >
+  <Globals>
+    <DefaultScreens activation="" credentials="Login"/>
+  </Globals>
+  <Triggers> 
+    <Actions>
+      <Action name="Aprovar" sourcescreen="Detalhes" targetscreen="Sucesso" errorscreen="ErrorList" errorlogskey="ErrorLogs" errorlogmessagekey="ErrorLogMessage" errorlogmessageaslistkey="ErrorLogMessageAsList">
+        <Methods>
+          <Method type="replay" mbo="PurchaseReqListApprovePRTestOperation" package="PR_Workflow:1.0" showCredScreenOnAuthFailure="true" >
+            <InputBinding optype="other" opname="approvePRTest" generateOld="false">
+              <Value sourceType="Key" workflowKey="PurchaseReqList_INSTID_attribKey" paramName="PUR_REQ_ID" mboType="string"/>			    
+                
+            </InputBinding>
+            <OutputBinding/>
+          </Method>
+        </Methods>
+      </Action>
+      <Action name="Atualizar" sourcescreen="Detalhes" targetscreen="Detalhes" errorscreen="">
+        <Methods>
+          <Method name="findByPrimaryKey" type="search" mbo="PurchaseReqList" package="PR_Workflow:1.0" showCredScreenOnAuthFailure="true" >
+            <InputBinding optype="none" opname="findByPrimaryKey" generateOld="true">
+              <Value sourceType="Key" workflowKey="PurchaseReqList_INSTID_attribKey" paramName="INSTID" attribName="INSTID" mboType="string"/>
+            </InputBinding>
+            <OutputBinding generateOld="true">			    
+              <Mapping workflowKey="PurchaseReqList_USER_ID_attribKey" workflowType="text" attribName="USER_ID" mboType="string"/>
+              <Mapping workflowKey="PurchaseReqList_WI_ID_attribKey" workflowType="text" attribName="WI_ID" mboType="string"/>
+              <Mapping workflowKey="PurchaseReqList_TASK_OBJ_attribKey" workflowType="text" attribName="TASK_OBJ" mboType="string"/>
+              <Mapping workflowKey="PurchaseReqList_MANDT_attribKey" workflowType="text" attribName="MANDT" mboType="string"/>
+              <Mapping workflowKey="PurchaseReqList_WI_TYPE_attribKey" workflowType="text" attribName="WI_TYPE" mboType="string"/>
+              <Mapping workflowKey="PurchaseReqList_WI_CD_attribKey" workflowType="date" attribName="WI_CD" mboType="date"/>
+              <Mapping workflowKey="PurchaseReqList_WI_TEXT_attribKey" workflowType="text" attribName="WI_TEXT" mboType="string"/>
+              <Mapping workflowKey="PurchaseReqList_CATID_attribKey" workflowType="text" attribName="CATID" mboType="string"/>
+              <Mapping workflowKey="PurchaseReqList_INSTID_attribKey" workflowType="text" attribName="INSTID" mboType="string"/>
+              <Mapping workflowKey="PurchaseReqList_TYPEID_attribKey" workflowType="text" attribName="TYPEID" mboType="string"/>
+              <Mapping workflowKey="PurchaseReqList_TOP_WI_ID_attribKey" workflowType="text" attribName="TOP_WI_ID" mboType="string"/>
+              <Mapping workflowKey="PurchaseReqList_RLWRT_attribKey" workflowType="number" attribName="RLWRT" mboType="decimal"/>
+              <Mapping workflowKey="PurchaseReqList_Requisitante_attribKey" workflowType="text" attribName="Requisitante" mboType="string"/>
+              <Mapping workflowKey="PurchaseReqList_Data_criacao_attribKey" workflowType="date" attribName="Data_criacao" mboType="date"/>
+              <Mapping workflowKey="PurchaseReqList_TEXT_HEADER_attribKey" workflowType="text" attribName="TEXT_HEADER" mboType="string"/>
+              <Mapping workflowKey="PurchaseReqList_TYPE_attribKey" workflowType="text" attribName="TYPE" mboType="string"/>
+              <Mapping workflowKey="PurchaseReqList_DATE_START_attribKey" workflowType="date" attribName="DATE_START" mboType="date"/>
+              <Mapping workflowKey="PurchaseReqList_DATE_END_attribKey" workflowType="date" attribName="DATE_END" mboType="date"/>
+
+            </OutputBinding>
+          </Method>
+        </Methods>
+      </Action>
+      <Action name="AtualizarButton" sourcescreen="Requisi__es" targetscreen="Requisi__es" errorscreen="ErrorList" errorlogskey="ErrorLogs" errorlogmessagekey="ErrorLogMessage" errorlogmessageaslistkey="ErrorLogMessageAsList">
+        <Methods>
+          <Method name="findAll" type="search" mbo="PurchaseReqList" package="PR_Workflow:1.0" showCredScreenOnAuthFailure="true" >
+            <InputBinding optype="none" opname="findAll" generateOld="false">
+            </InputBinding>
+            <OutputBinding generateOld="true">			    
+              <Mapping workflowKey="PurchaseReqList" workflowType="list" mboType="list">
+                 <Mapping workflowKey="PurchaseReqList_USER_ID_attribKey" workflowType="text" attribName="USER_ID" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_WI_ID_attribKey" workflowType="text" attribName="WI_ID" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_TASK_OBJ_attribKey" workflowType="text" attribName="TASK_OBJ" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_MANDT_attribKey" workflowType="text" attribName="MANDT" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_WI_TYPE_attribKey" workflowType="text" attribName="WI_TYPE" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_WI_CD_attribKey" workflowType="date" attribName="WI_CD" mboType="date"/>
+                 <Mapping workflowKey="PurchaseReqList_WI_TEXT_attribKey" workflowType="text" attribName="WI_TEXT" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_CATID_attribKey" workflowType="text" attribName="CATID" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_INSTID_attribKey" workflowType="text" attribName="INSTID" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_TYPEID_attribKey" workflowType="text" attribName="TYPEID" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_TOP_WI_ID_attribKey" workflowType="text" attribName="TOP_WI_ID" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_RLWRT_attribKey" workflowType="number" attribName="RLWRT" mboType="decimal"/>
+                 <Mapping workflowKey="PurchaseReqList_Requisitante_attribKey" workflowType="text" attribName="Requisitante" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_Data_criacao_attribKey" workflowType="date" attribName="Data_criacao" mboType="date"/>
+              </Mapping>
+
+            </OutputBinding>
+          </Method>
+        </Methods>
+      </Action>
+      <Action name="Atualizar" sourcescreen="Requisi__es" targetscreen="Requisi__es" errorscreen="ErrorList" errorlogskey="ErrorLogs" errorlogmessagekey="ErrorLogMessage" errorlogmessageaslistkey="ErrorLogMessageAsList">
+        <Methods>
+          <Method name="findAll" type="search" mbo="PurchaseReqList" package="PR_Workflow:1.0" showCredScreenOnAuthFailure="true" >
+            <InputBinding optype="none" opname="findAll" generateOld="false">
+            </InputBinding>
+            <OutputBinding generateOld="true">			    
+              <Mapping workflowKey="PurchaseReqList" workflowType="list" mboType="list">
+                 <Mapping workflowKey="PurchaseReqList_USER_ID_attribKey" workflowType="text" attribName="USER_ID" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_WI_ID_attribKey" workflowType="text" attribName="WI_ID" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_TASK_OBJ_attribKey" workflowType="text" attribName="TASK_OBJ" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_MANDT_attribKey" workflowType="text" attribName="MANDT" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_WI_TYPE_attribKey" workflowType="text" attribName="WI_TYPE" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_WI_CD_attribKey" workflowType="date" attribName="WI_CD" mboType="date"/>
+                 <Mapping workflowKey="PurchaseReqList_WI_TEXT_attribKey" workflowType="text" attribName="WI_TEXT" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_CATID_attribKey" workflowType="text" attribName="CATID" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_INSTID_attribKey" workflowType="text" attribName="INSTID" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_TYPEID_attribKey" workflowType="text" attribName="TYPEID" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_TOP_WI_ID_attribKey" workflowType="text" attribName="TOP_WI_ID" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_RLWRT_attribKey" workflowType="number" attribName="RLWRT" mboType="decimal"/>
+                 <Mapping workflowKey="PurchaseReqList_Requisitante_attribKey" workflowType="text" attribName="Requisitante" mboType="string"/>
+                 <Mapping workflowKey="PurchaseReqList_Data_criacao_attribKey" workflowType="date" attribName="Data_criacao" mboType="date"/>
+              </Mapping>
+
+            </OutputBinding>
+          </Method>
+        </Methods>
+      </Action>
+      <Action name="Rejeitar" sourcescreen="Motivo" targetscreen="Sucesso" errorscreen="ErrorList" errorlogskey="ErrorLogs" errorlogmessagekey="ErrorLogMessage" errorlogmessageaslistkey="ErrorLogMessageAsList">
+        <Methods>
+          <Method type="replay" mbo="PurchaseReqListRejectPRTestOperation" package="PR_Workflow:1.0" showCredScreenOnAuthFailure="true" >
+            <InputBinding optype="other" opname="rejectPRTest" generateOld="false">
+              <Value sourceType="Key" workflowKey="PurchaseReqList_INSTID_attribKey" paramName="PUR_REQ_ID" mboType="string"/>
+              <Value sourceType="Key" workflowKey="motivo_rejeicao" paramName="DECISION_NOTE" mboType="string"/>			    
+                
+            </InputBinding>
+            <OutputBinding/>
+          </Method>
+        </Methods>
+      </Action>
+    </Actions>
+    <Notifications>
+    </Notifications>
+  </Triggers>
+</Workflow>
+        

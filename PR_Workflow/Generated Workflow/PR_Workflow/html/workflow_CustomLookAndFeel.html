@@ -1,0 +1,385 @@
+﻿<!doctype html>
+<!-- Warning, this file is overwritten with each run of the package generation wizard -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <meta name="HandheldFriendly" content="True" />
+        <meta http-equiv="PRAGMA" content="NO-CACHE" />
+        <meta name="viewport" content="minimum-scale=.25, initial-scale=1" />
+
+        <script src="js/API.js"></script>
+        <script src="js/Callbacks.js"></script>
+        <script src="js/Camera.js"></script>
+        <script src="js/Certificate.js"></script>
+        <script src="js/Custom.js"></script>
+        <script src="js/ExternalResource.js"></script>
+        <script src="js/json2.js"></script>
+        <script src="js/Resources.js"></script>
+        <script src="js/SUPStorage.js"></script>
+        <script src="js/Timezone.js"></script>
+        <script src="js/Utils.js"></script>
+        <script src="js/widgets/sy.ui.js"></script>
+        <script src="js/widgets/sy.ui.android.checkbox.js"></script>
+        <script src="js/widgets/sy.ui.android.combobox.js"></script>
+        <script src="js/widgets/sy.ui.android.listview.js"></script>
+        <script src="js/widgets/sy.ui.android.radiobutton.js"></script>
+        <script src="js/widgets/sy.ui.bb.picker.js"></script>
+        <script src="js/widgets/sy.ui.bb.textbox.js"></script>
+        <script src="js/Workflow.js"></script>
+        <script src="js/WorkflowMessage.js"></script>
+        <link rel="stylesheet" href="css/bb/checkbox.css" type="text/css" />
+        <link rel="stylesheet" href="css/bb/datepicker.css" type="text/css" />
+        <link rel="stylesheet" href="css/bb/editBox.css" type="text/css" />
+        <link rel="stylesheet" href="css/bb/listview.css" type="text/css" />
+        <link rel="stylesheet" href="css/bb/master.css" type="text/css" />
+        <link rel="stylesheet" href="css/bb/radiobutton.css" type="text/css" />
+        <link rel="stylesheet" href="css/bb/Stylesheet.css" type="text/css" />
+        <link rel="stylesheet" href="css/bb/valuepicker.css" type="text/css" />
+        
+        <script>
+            isCustomLookAndFeel= true;
+        </script>
+        
+      
+        <style type="text/css">
+           .ErrorList_alternateColor.ui-btn-down-c {	background: #4596ce; background-image:   } 
+           .ErrorList_defaultColor.ui-btn-down-c {	background: #4596ce; background-image:   } 
+           .ErrorDetail_alternateColor.ui-btn-down-c {	background: #4596ce; background-image:   } 
+           .ErrorDetail_defaultColor.ui-btn-down-c {	background: #4596ce; background-image:   } 
+           .Requisi__es_alternateColor.ui-btn-down-c {	background: #4596ce; background-image:   } 
+           .Requisi__es_defaultColor.ui-btn-down-c {	background: #4596ce; background-image:   } 
+        </style>
+     </head>
+    <body onload="onWorkflowLoad();">
+    <div id="LoginScreenDiv" sup_screen_title="Login" style="display: none" sup_menuitems="Sair,Sair" sup_okaction="doCancelAction()">
+        <script>if (isIOS()) { document.writeln("<h3 id=\"LoginScreenTitle\" class=\"screenTitle\">Login</h3>"); }</script>
+        <ul id="LoginScreenDivMenu" class="menu">
+            <li><a class="nav" href="javascript:void(0)" name="Sair" id="LoginSair" onclick="menuItemCallbackLoginSair();">Sair</a></li>
+        </ul>
+        <form style="margin: 0px;" name="LoginForm" id="LoginForm" onSubmit="return false;" autocomplete="off" sup_show_alert_on_validation_error="true">
+           
+          <div class="customTopOfFormStyle"  ><span id="LoginForm_help" class="help"></span></div>
+          <div class="customTopOfFormStyle"   id="topOfLoginForm"></div>
+        <div id="sabesp_logo" sup_html_type="htmlview">
+                <div style="text-align: center; width: 100%"><img src="images/Sabesp.png" style="width:70%;" /></div>
+        </div> 
+          <div class="editbox">
+    
+          <label class="left" for="cc_username">Usuário</label>
+            <input class="right" type="text" id="cc_username" sup_html_type="text"  value="" sup_default_value="" sup_required_field="true" sup_max_length="32767" sup_num_of_decimals="0" credential="username"/><span id="Login_cc_username_help" class="help"></span>
+          </div>
+  
+          <div class="editbox">
+    
+          <label class="left" for="cc_password">Senha</label>
+            <input class="right" type="password" id="cc_password" sup_html_type="text"  value="" sup_default_value="" sup_required_field="true" sup_max_length="32767" sup_num_of_decimals="0" credential="password"/><span id="Login_cc_password_help" class="help"></span>
+          </div>
+  
+          <div class="button">
+    
+            <!--  Note: using button tag seems doesn't work for iOS when we have both text and image , worked fine with BB6,android and WM 7  -->
+            <button  type="button" data-role="none" ignored="true" onclick="menuItemCallbackLoginEnter_Login();"  id="Enter_Login" value="Efetuar Login" label-position="center" >Efetuar Login</button>
+          </div>
+ 
+           <div class="customBottomOfFormStyle"   id="bottomOfLoginForm"></div>       
+        </form>  
+    </div> <!-- end of screen Login -->
+    <div id="ErrorListScreenDiv" sup_screen_title="ErrorList" style="display: none" sup_menuitems="Cancel,Cancel" sup_okaction="doSaveActionWithoutReturn()">
+        <script>if (isIOS()) { document.writeln("<h3 id=\"ErrorListScreenTitle\" class=\"screenTitle\">ErrorList</h3>"); }</script>
+        <ul id="ErrorListScreenDivMenu" class="menu">
+            <li><a class="nav" href="javascript:void(0)" name="Cancel" id="ErrorListCancel" onclick="menuItemCallbackErrorListCancel()">Cancel</a></li>
+        </ul>
+        <form style="margin: 0px;" name="ErrorListForm" id="ErrorListForm" onSubmit="return false;" autocomplete="on" sup_show_alert_on_validation_error="true">
+           
+          <div class="customTopOfFormStyle"  ><span id="ErrorListForm_help" class="help"></span></div>
+          <div class="customTopOfFormStyle"   id="topOfErrorListForm"></div>
+          <div class="listview" screen="ErrorList" id="ErrorLogs" wrap_data="false">
+            <script>
+                         var field0 = {id:'ErrorLogMessage', name:'ErrorLogMessage' , width:100, height:0, static:true ,font:'normal',dataType:''};
+                         var line0=[ field0 ] ;
+
+                         var lines =[line0];
+                         Sybase('div[screen="ErrorList"]#ErrorLogs').syListview ({
+	                           lines:lines,
+	                           onItemSelected: itemSelected,
+	                           showViewHeader:false,
+	                           onEmptyList:"",
+	                           alternateColor:"null",
+                                   reversedColor:"",
+ 	                           inset:"false"	                           
+	                      });
+	                     
+	                    
+           		
+	                      UIScreenListeners.push( function(screenObj ) {
+	                          if (  screenObj.screenToShow = 'ErrorLogs') {
+	                              Sybase('div[screen="ErrorList"]#ErrorLogs').syListview( 'updateOnVisible', null);
+	                          }
+                          }); 
+                    
+                         UIUpdateHandlers.push( {screenName: 'ErrorList',
+                                                widgetName: 'div.listview',
+                                                callback: function( data ) {
+                                                    Sybase('div[screen="ErrorList"]#ErrorLogs').syListview( 'updateUIFromWorkFlowMessage', [data] );       
+       return true;
+                                                      } }
+                            );
+                     
+                     
+                        function itemSelected( target ) {  
+                             navigateForward("ErrorDetail",  target.id );
+                             Sybase('div.editbox').editBox();
+                             Sybase('div.choice').comboBox();                             
+                        }
+             </script>
+           </div>
+ 
+
+           <div class="customBottomOfFormStyle"   id="bottomOfErrorListForm"></div>       
+        </form>  
+    </div> <!-- end of screen ErrorList -->
+    <div id="ErrorDetailScreenDiv" sup_screen_title="ErrorDetail" style="display: none" sup_menuitems="Cancel,Cancel" sup_okaction="doSaveActionWithoutReturn()">
+        <script>if (isIOS()) { document.writeln("<h3 id=\"ErrorDetailScreenTitle\" class=\"screenTitle\">ErrorDetail</h3>"); }</script>
+        <ul id="ErrorDetailScreenDivMenu" class="menu">
+            <li><a class="nav" href="javascript:void(0)" name="Cancel" id="ErrorDetailCancel" onclick="menuItemCallbackErrorDetailCancel()">Cancel</a></li>
+        </ul>
+        <form style="margin: 0px;" name="ErrorDetailForm" id="ErrorDetailForm" onSubmit="return false;" autocomplete="on" sup_show_alert_on_validation_error="true">
+           
+          <div class="customTopOfFormStyle"  ><span id="ErrorDetailForm_help" class="help"></span></div>
+          <div class="customTopOfFormStyle"   id="topOfErrorDetailForm"></div>
+          <div class="listview" screen="ErrorDetail" id="ErrorLogMessageAsList" wrap_data="false">
+            <script>
+                         var field0 = {id:'name', name:'Name' , width:30, height:0, static:true ,font:'normal',dataType:''};
+                         var field1 = {id:'value', name:'Value' , width:70, height:0, static:true ,font:'normal',dataType:''};
+                         var line0=[ field0,field1 ] ;
+
+                         var lines =[line0];
+                         Sybase('div[screen="ErrorDetail"]#ErrorLogMessageAsList').syListview ({
+	                           lines:lines,
+	                           onItemSelected: null,
+	                           showViewHeader:false,
+	                           onEmptyList:"",
+	                           alternateColor:"null",
+                                   reversedColor:"",
+ 	                           inset:"false"	                           
+	                      });
+	                     
+	                    
+           		
+	                      UIScreenListeners.push( function(screenObj ) {
+	                          if (  screenObj.screenToShow = 'ErrorLogMessageAsList') {
+	                              Sybase('div[screen="ErrorDetail"]#ErrorLogMessageAsList').syListview( 'updateOnVisible', null);
+	                          }
+                          }); 
+                    
+                         UIUpdateHandlers.push( {screenName: 'ErrorDetail',
+                                                widgetName: 'div.listview',
+                                                callback: function( data ) {
+                                                    Sybase('div[screen="ErrorDetail"]#ErrorLogMessageAsList').syListview( 'updateUIFromWorkFlowMessage', [data] );       
+       return true;
+                                                      } }
+                            );
+                     
+                     
+                        function itemSelected( target ) {                             
+                        }
+             </script>
+           </div>
+ 
+
+           <div class="customBottomOfFormStyle"   id="bottomOfErrorDetailForm"></div>       
+        </form>  
+    </div> <!-- end of screen ErrorDetail -->
+    <div id="DetalhesScreenDiv" sup_screen_title="Detalhes" style="display: none" sup_menuitems="Aprovar,Aprovar,Rejeitar,Rejeitar" sup_okaction="doCancelAction()">
+        <script>if (isIOS()) { document.writeln("<h3 id=\"DetalhesScreenTitle\" class=\"screenTitle\">Detalhes</h3>"); }</script>
+        <ul id="DetalhesScreenDivMenu" class="menu">
+            <li><a class="nav" href="javascript:void(0)" name="Aprovar" id="DetalhesAprovar" onclick="menuItemCallbackDetalhesAprovar();">Aprovar</a></li>
+            <li><a class="nav" href="javascript:void(0)" name="Rejeitar" id="DetalhesRejeitar" onclick="menuItemCallbackDetalhesRejeitar();">Rejeitar</a></li>
+            <li><a class="nav" href="javascript:void(0)" name="Cancel" id="DetalhesCancel" onclick="menuItemCallbackDetalhesCancel()">Cancel</a></li>
+        </ul>
+        <form style="margin: 0px;" name="DetalhesForm" id="DetalhesForm" onSubmit="return false;" autocomplete="on" sup_show_alert_on_validation_error="true">
+           
+          <div class="customTopOfFormStyle"  ><span id="DetalhesForm_help" class="help"></span></div>
+          <div class="customTopOfFormStyle"   id="topOfDetalhesForm"></div> 
+          <div class="editbox">
+    
+          <label class="left" for="PurchaseReqList_INSTID_attribKey">Requisição:</label>
+            <input class="right" type="text" id="PurchaseReqList_INSTID_attribKey" sup_html_type="text"  sup_max_length="70" sup_num_of_decimals="0" readonly="readonly"/><span id="Detalhes_PurchaseReqList_INSTID_attribKey_help" class="help"></span>
+          </div>
+  
+          <div class="editbox">
+    
+          <label class="left" for="PurchaseReqList_TEXT_HEADER_attribKey">Descrição:</label>
+            <textarea class="right" rows="3" cols="22" id="PurchaseReqList_TEXT_HEADER_attribKey" sup_html_type="text"  sup_max_length="120" sup_num_of_decimals="0" disabled="disabled" readonly="readonly"></textarea><span id="Detalhes_PurchaseReqList_TEXT_HEADER_attribKey_help" class="help"></span>
+          </div>
+  
+          <div class="editbox">
+    
+          <label class="left" for="PurchaseReqList_RLWRT_attribKey">Valor (R$):</label>
+            <input class="right" type="text" id="PurchaseReqList_RLWRT_attribKey" sup_html_type="text"  sup_max_length="32767" sup_num_of_decimals="10" readonly="readonly"/><span id="Detalhes_PurchaseReqList_RLWRT_attribKey_help" class="help"></span>
+          </div>
+  
+          <div class="editbox">
+    
+          <label class="left" for="PurchaseReqList_Requisitante_attribKey">Requisitante:</label>
+            <input class="right" type="text" id="PurchaseReqList_Requisitante_attribKey" sup_html_type="text"  sup_max_length="12" sup_num_of_decimals="0" readonly="readonly"/><span id="Detalhes_PurchaseReqList_Requisitante_attribKey_help" class="help"></span>
+          </div>
+  
+          <div class="editbox">
+    
+          <label class="left" for="PurchaseReqList_Data_criacao_attribKey">Data criação:</label>
+            <input class="right"  class="datepicker" type="date" id="PurchaseReqList_Data_criacao_attribKey" sup_html_type="date"  sup_max_length="32767" sup_num_of_decimals="0" readonly="readonly"/><span id="Detalhes_PurchaseReqList_Data_criacao_attribKey_help" class="help"></span>
+          </div>
+  
+          <div class="editbox">
+    
+          <label class="left" for="PurchaseReqList_DATE_START_attribKey">Previsão Início:</label>
+            <input class="right"  class="datepicker" type="date" id="PurchaseReqList_DATE_START_attribKey" sup_html_type="date"  sup_max_length="32767" sup_num_of_decimals="0" readonly="readonly"/><span id="Detalhes_PurchaseReqList_DATE_START_attribKey_help" class="help"></span>
+          </div>
+  
+          <div class="editbox">
+    
+          <label class="left" for="PurchaseReqList_DATE_END_attribKey">Previsão Término:</label>
+            <input class="right"  class="datepicker" type="date" id="PurchaseReqList_DATE_END_attribKey" sup_html_type="date"  sup_max_length="32767" sup_num_of_decimals="0" readonly="readonly"/><span id="Detalhes_PurchaseReqList_DATE_END_attribKey_help" class="help"></span>
+          </div>
+ 
+           <div class="customBottomOfFormStyle"   id="bottomOfDetalhesForm"></div>       
+        </form>  
+    </div> <!-- end of screen Detalhes -->
+    <div id="Requisi__esScreenDiv" sup_screen_title="Requisições" style="display: none" sup_menuitems="Sair,Sair,Atualizar,AtualizarButton" sup_okaction="doCancelAction()">
+        <script>if (isIOS()) { document.writeln("<h3 id=\"Requisi__esScreenTitle\" class=\"screenTitle\">Requisições</h3>"); }</script>
+        <ul id="Requisi__esScreenDivMenu" class="menu">
+            <li><a class="nav" href="javascript:void(0)" name="Sair" id="Requisi__esSair" onclick="menuItemCallbackRequisi__esSair();">Sair</a></li>
+            <li><a class="nav" href="javascript:void(0)" name="Atualizar" id="Requisi__esAtualizarButton" onclick="menuItemCallbackRequisi__esAtualizarButton();">Atualizar</a></li>
+        </ul>
+        <form style="margin: 0px;" name="Requisi__esForm" id="Requisi__esForm" onSubmit="return false;" autocomplete="on" sup_show_alert_on_validation_error="true">
+           
+          <div class="customTopOfFormStyle"  ><span id="Requisi__esForm_help" class="help"></span></div>
+          <div class="customTopOfFormStyle"   id="topOfRequisi__esForm"></div>
+          <div class="listview" screen="Requisi__es" id="PurchaseReqList" wrap_data="false">
+            <script>
+                         var field0 = {id:'PurchaseReqList_INSTID_attribKey', name:'Requisição de compra' , width:100, height:0, static:true ,font:'normal',dataType:'TEXT'};
+                         var line0=[ field0 ] ;
+
+                         var field1 = {id:'PurchaseReqList_Requisitante_attribKey', name:'Requisitante' , width:100, height:0, static:false ,font:'normal',dataType:'TEXT'};
+                         var line1=[ field1 ] ;
+
+                         var field2 = {id:'PurchaseReqList_Data_criacao_attribKey', name:'Data Criação' , width:100, height:0, static:true ,font:'normal',dataType:'DATE'};
+                         var line2=[ field2 ] ;
+
+                         var lines =[line0,line1,line2];
+                         Sybase('div[screen="Requisi__es"]#PurchaseReqList').syListview ({
+	                           lines:lines,
+	                           onItemSelected: itemSelected,
+	                           showViewHeader:true,
+	                           onEmptyList:"",
+	                           alternateColor:"null",
+                                   reversedColor:"",
+ 	                           inset:"false"	                           
+	                      });
+	                     
+	                    
+           		
+	                      UIScreenListeners.push( function(screenObj ) {
+	                          if (  screenObj.screenToShow = 'PurchaseReqList') {
+	                              Sybase('div[screen="Requisi__es"]#PurchaseReqList').syListview( 'updateOnVisible', null);
+	                          }
+                          }); 
+                    
+                         UIUpdateHandlers.push( {screenName: 'Requisi__es',
+                                                widgetName: 'div.listview',
+                                                callback: function( data ) {
+                                                    Sybase('div[screen="Requisi__es"]#PurchaseReqList').syListview( 'updateUIFromWorkFlowMessage', [data] );       
+       return true;
+                                                      } }
+                            );
+                     
+                     
+                        function itemSelected( target ) {  
+                             navigateForward("Detalhes",  target.id );
+                             Sybase('div.editbox').editBox();
+                             Sybase('div.choice').comboBox();                             
+                        }
+             </script>
+           </div>
+ 
+
+           <div class="customBottomOfFormStyle"   id="bottomOfRequisi__esForm"></div>       
+        </form>  
+    </div> <!-- end of screen Requisições -->
+    <div id="MotivoScreenDiv" sup_screen_title="Motivo" style="display: none" sup_menuitems="Rejeitar,Rejeitar" sup_okaction="doSaveActionWithoutReturn()">
+        <script>if (isIOS()) { document.writeln("<h3 id=\"MotivoScreenTitle\" class=\"screenTitle\">Motivo</h3>"); }</script>
+        <ul id="MotivoScreenDivMenu" class="menu">
+            <li><a class="nav" href="javascript:void(0)" name="Rejeitar" id="MotivoRejeitar" onclick="menuItemCallbackMotivoRejeitar();">Rejeitar</a></li>
+            <li><a class="nav" href="javascript:void(0)" name="Cancel" id="MotivoCancel" onclick="menuItemCallbackMotivoCancel()">Cancel</a></li>
+        </ul>
+        <form style="margin: 0px;" name="MotivoForm" id="MotivoForm" onSubmit="return false;" autocomplete="on" sup_show_alert_on_validation_error="true">
+           
+          <div class="customTopOfFormStyle"  ><span id="MotivoForm_help" class="help"></span></div>
+          <div class="customTopOfFormStyle"   id="topOfMotivoForm"></div> 
+          <div class="editbox">
+    
+          <label class="top" for="motivo_rejeicao">Motivo da rejeição</label>
+            <textarea class="" rows="4" cols="22" id="motivo_rejeicao" sup_html_type="text"  sup_required_field="true" sup_max_length="100" sup_num_of_decimals="0" sup_valid_msg="Necessário informar um motivo para rejeitar."></textarea><span id="Motivo_motivo_rejeicao_help" class="help"></span>
+          </div>
+ 
+           <div class="customBottomOfFormStyle"   id="bottomOfMotivoForm"></div>       
+        </form>  
+    </div> <!-- end of screen Motivo -->
+    <div id="SucessoScreenDiv" sup_screen_title="Sucesso" style="display: none" sup_menuitems="Cancel,Cancel" sup_okaction="doCancelAction()">
+        <script>if (isIOS()) { document.writeln("<h3 id=\"SucessoScreenTitle\" class=\"screenTitle\">Sucesso</h3>"); }</script>
+        <ul id="SucessoScreenDivMenu" class="menu">
+            <li><a class="nav" href="javascript:void(0)" name="Cancel" id="SucessoCancel" onclick="menuItemCallbackSucessoCancel()">Cancel</a></li>
+        </ul>
+        <form style="margin: 0px;" name="SucessoForm" id="SucessoForm" onSubmit="return false;" autocomplete="on" sup_show_alert_on_validation_error="true">
+           
+          <div class="customTopOfFormStyle"  ><span id="SucessoForm_help" class="help"></span></div>
+          <div class="customTopOfFormStyle"   id="topOfSucessoForm"></div> 
+          <div class="label">
+    
+            <p id="mensagem_sucesso">Requisição aprovada com sucesso.</p>
+          </div>
+  
+          <div class="button">
+    
+            <!--  Note: using button tag seems doesn't work for iOS when we have both text and image , worked fine with BB6,android and WM 7  -->
+            <button  type="button" data-role="none" ignored="true" onclick="menuItemCallbackSucessoOK();"  id="OK" value="OK" label-position="center" >OK</button>
+          </div>
+ 
+           <div class="customBottomOfFormStyle"   id="bottomOfSucessoForm"></div>       
+        </form>  
+    </div> <!-- end of screen Sucesso -->
+    <div id="blankScreenDiv" style="display: none">
+    </div>
+        <script>
+          iScroller = null;
+          
+           function showScroller( isShow,page  ){
+               
+               var divPage =  document.getElementById( page );
+               if (divPage == null ) {
+                       return;
+               }
+               if ( divPage.offsetHeight < screen.height ) {
+                    divPage.style.height = screen.height +'px';
+               }
+               Sybase.ui.tableLayout( page )
+           }
+           
+           Sybase(document).ready( function(){
+               Sybase('div.editbox').editBox();
+               Sybase('div.choice').comboBox();
+               //Sybase('div.checkbox').checkBox();
+             
+                showScroller( "true",  getCurrentScreen() +'ScreenDiv');
+
+                UIScreenListeners.push( function(screenObj ) {
+                     showScroller( true,  screenObj.screenToShow +'ScreenDiv' ); 
+                }); 
+           });
+
+
+       </script>
+
+    </body>
+</html>

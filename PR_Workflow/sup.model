@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uepmodels:EMODiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sapDatasourceExtension="platform:/resource/com.sybase.uep.datasource/model/SAPOperationDefinition.ecore" xmlns:uepmodels="platform:/resource/com.sybase.uep.tooling.models/model/uepModels.ecore" modelVersion="2.1.3">
+  <mObjects name="SAP_Logon" remark="" id="_DEky8BQVEeS2Gpg2KUvYzg">
+    <attributes name="PING" type="STRING" length="2" nullable="false" primaryKey="true" fromColumn="//@mObjects.0/@read/@remoteOp/@metaData/@columnInfos.0">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+    </attributes>
+    <read>
+      <remoteOp profileName="SAP DEV" type="SAP">
+        <metaData>
+          <columnInfos nullable="false" name="PING" type="STRING" length="2"/>
+        </metaData>
+        <definition xsi:type="sapDatasourceExtension:ESAPOperationDefinition" userNamePk="//@personalizationKeys.0" passwordPk="//@personalizationKeys.1">
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsKey>jco.client.client</connPropsKey>
+          <connPropsKey>jco.client.lang</connPropsKey>
+          <connPropsKey>jco.client.codepage</connPropsKey>
+          <connPropsKey>jco.client.sysnr</connPropsKey>
+          <connPropsKey>jco.client.ashost</connPropsKey>
+          <connPropsKey>jco.client.abap_debug</connPropsKey>
+          <connPropsKey>jco.client.alias_user</connPropsKey>
+          <connPropsKey>jco.client.dest</connPropsKey>
+          <connPropsKey>jco.client.dsr</connPropsKey>
+          <connPropsKey>jco.client.extiddata</connPropsKey>
+          <connPropsKey>jco.client.extidtype</connPropsKey>
+          <connPropsKey>jco.client.getsso2</connPropsKey>
+          <connPropsKey>jco.client.group</connPropsKey>
+          <connPropsKey>jco.client.grt_data</connPropsKey>
+          <connPropsKey>jco.client.gwhost</connPropsKey>
+          <connPropsKey>jco.client.gwserv</connPropsKey>
+          <connPropsKey>jco.client.idle_timeout</connPropsKey>
+          <connPropsKey>jco.client.lcheck</connPropsKey>
+          <connPropsKey>jco.client.mshost</connPropsKey>
+          <connPropsKey>jco.client.mysapsso2</connPropsKey>
+          <connPropsKey>jco.client.r3name</connPropsKey>
+          <connPropsKey>jco.client.saplogon_id</connPropsKey>
+          <connPropsKey>jco.client.snc_lib</connPropsKey>
+          <connPropsKey>jco.client.snc_mode</connPropsKey>
+          <connPropsKey>jco.client.snc_myname</connPropsKey>
+          <connPropsKey>jco.client.snc_partnername</connPropsKey>
+          <connPropsKey>jco.client.snc_qop</connPropsKey>
+          <connPropsKey>jco.client.tphost</connPropsKey>
+          <connPropsKey>jco.client.tpname</connPropsKey>
+          <connPropsKey>jco.client.trace</connPropsKey>
+          <connPropsKey>jco.client.use_guihost</connPropsKey>
+          <connPropsKey>jco.client.use_guiprogid</connPropsKey>
+          <connPropsKey>jco.client.use_guiserv</connPropsKey>
+          <connPropsKey>jco.client.use_sapgui</connPropsKey>
+          <connPropsKey>jco.client.x509cert</connPropsKey>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <sapInput/>
+          <sapOutput>
+            <sapParameters>PING</sapParameters>
+          </sapOutput>
+          <sapMethod name="" objectName="Z_SUP" objectType="" shortText="" function="Z_SUP_CHECK_CONN" description="" classVerb="" apiType="" method="" rfc="true" resultCheckerType="None">
+            <metaData>
+              <outputParams name="PING" dataType="CHAR" length="2" optional="true" type="OUTPUT"/>
+            </metaData>
+          </sapMethod>
+        </definition>
+      </remoteOp>
+    </read>
+    <namedQuery sqlQuery="SELECT x.* FROM SAP_Logon x &#xA;WHERE x.PING = :PING " name="findByPrimaryKey" isSystem="true">
+      <parameters name="PING" type="STRING" length="2" nullable="false" fromAttribute="//@mObjects.0/@attributes.0">
+        <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+      </parameters>
+    </namedQuery>
+    <publish/>
+    <subscribe>
+      <downloadData/>
+    </subscribe>
+  </mObjects>
+  <mObjects name="PurchaseReqList" remark="" id="_RfvcABQVEeS2Gpg2KUvYzg">
+    <attributes name="USER_ID" type="STRING" length="12" nullable="false" primaryKey="false" fromColumn="//@mObjects.1/@read/@remoteOp/@metaData/@columnInfos.0">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+    </attributes>
+    <attributes name="WI_ID" type="STRING" length="12" nullable="false" primaryKey="false" fromColumn="//@mObjects.1/@read/@remoteOp/@metaData/@columnInfos.1">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+    </attributes>
+    <attributes name="TASK_OBJ" type="STRING" length="10" nullable="false" primaryKey="false" fromColumn="//@mObjects.1/@read/@remoteOp/@metaData/@columnInfos.2">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+    </attributes>
+    <attributes name="MANDT" type="STRING" length="3" nullable="false" primaryKey="false" fromColumn="//@mObjects.1/@read/@remoteOp/@metaData/@columnInfos.3">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+    </attributes>
+    <attributes name="WI_TYPE" type="STRING" length="1" nullable="false" primaryKey="false" fromColumn="//@mObjects.1/@read/@remoteOp/@metaData/@columnInfos.4">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+    </attributes>
+    <attributes name="WI_CD" type="DATE" primaryKey="false" fromColumn="//@mObjects.1/@read/@remoteOp/@metaData/@columnInfos.5">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="DATE" sqlType="91" javaType="java.sql.Date"/>
+    </attributes>
+    <attributes name="WI_TEXT" type="STRING" length="120" nullable="false" primaryKey="false" fromColumn="//@mObjects.1/@read/@remoteOp/@metaData/@columnInfos.6">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+    </attributes>
+    <attributes name="CATID" type="STRING" length="2" nullable="false" primaryKey="false" fromColumn="//@mObjects.1/@read/@remoteOp/@metaData/@columnInfos.8">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+    </attributes>
+    <attributes name="INSTID" type="STRING" length="70" nullable="false" primaryKey="true" fromColumn="//@mObjects.1/@read/@remoteOp/@metaData/@columnInfos.9">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+    </attributes>
+    <attributes name="TYPEID" type="STRING" length="32" nullable="false" primaryKey="false" fromColumn="//@mObjects.1/@read/@remoteOp/@metaData/@columnInfos.10">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+    </attributes>
+    <attributes name="TOP_WI_ID" type="STRING" length="12" nullable="false" primaryKey="false" fromColumn="//@mObjects.1/@read/@remoteOp/@metaData/@columnInfos.12">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+    </attributes>
+    <attributes name="RLWRT" type="DECIMAL" nullable="false" primaryKey="false" fromColumn="//@mObjects.1/@read/@remoteOp/@metaData/@columnInfos.13">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="DECIMAL" sqlType="3" javaType="java.math.BigDecimal"/>
+    </attributes>
+    <attributes name="Requisitante" type="STRING" length="12" nullable="false" primaryKey="false" fromColumn="//@mObjects.1/@read/@remoteOp/@metaData/@columnInfos.14">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+    </attributes>
+    <attributes name="Data_criacao" type="DATE" primaryKey="false" fromColumn="//@mObjects.1/@read/@remoteOp/@metaData/@columnInfos.15">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="DATE" sqlType="91" javaType="java.sql.Date"/>
+    </attributes>
+    <attributes name="TEXT_HEADER" type="STRING" length="256" nullable="false" fromColumn="//@mObjects.1/@read/@remoteOp/@metaData/@columnInfos.7">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+    </attributes>
+    <attributes name="TYPE" type="STRING" length="256" nullable="false" fromColumn="//@mObjects.1/@read/@remoteOp/@metaData/@columnInfos.11">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+    </attributes>
+    <attributes name="DATE_START" type="DATE" fromColumn="//@mObjects.1/@read/@remoteOp/@metaData/@columnInfos.16">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="DATE" sqlType="91" javaType="java.sql.Date"/>
+    </attributes>
+    <attributes name="DATE_END" type="DATE" fromColumn="//@mObjects.1/@read/@remoteOp/@metaData/@columnInfos.17">
+      <dataType xsi:type="uepmodels:EPrimitiveType" name="DATE" sqlType="91" javaType="java.sql.Date"/>
+    </attributes>
+    <operations name="approvePRTest" type="other" remark="">
+      <parameters name="PUR_REQ_ID" type="STRING" length="10" nullable="false" toArgument="//@mObjects.1/@operations.0/@remoteOp/@metaData/@arguments.0">
+        <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+      </parameters>
+      <remoteOp profileName="SAP DEV" type="SAP">
+        <metaData>
+          <arguments nullable="false" syncParameter="//@mObjects.1/@operations.0/@clientParameters.0" defaultValue="" required="true" name="PUR_REQ_ID" type="STRING" isOperation="true" length="10">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </arguments>
+        </metaData>
+        <definition xsi:type="sapDatasourceExtension:ESAPOperationDefinition" userNamePk="//@personalizationKeys.0" passwordPk="//@personalizationKeys.1">
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsKey>jco.client.client</connPropsKey>
+          <connPropsKey>jco.client.lang</connPropsKey>
+          <connPropsKey>jco.client.codepage</connPropsKey>
+          <connPropsKey>jco.client.sysnr</connPropsKey>
+          <connPropsKey>jco.client.ashost</connPropsKey>
+          <connPropsKey>jco.client.abap_debug</connPropsKey>
+          <connPropsKey>jco.client.alias_user</connPropsKey>
+          <connPropsKey>jco.client.dest</connPropsKey>
+          <connPropsKey>jco.client.dsr</connPropsKey>
+          <connPropsKey>jco.client.extiddata</connPropsKey>
+          <connPropsKey>jco.client.extidtype</connPropsKey>
+          <connPropsKey>jco.client.getsso2</connPropsKey>
+          <connPropsKey>jco.client.group</connPropsKey>
+          <connPropsKey>jco.client.grt_data</connPropsKey>
+          <connPropsKey>jco.client.gwhost</connPropsKey>
+          <connPropsKey>jco.client.gwserv</connPropsKey>
+          <connPropsKey>jco.client.idle_timeout</connPropsKey>
+          <connPropsKey>jco.client.lcheck</connPropsKey>
+          <connPropsKey>jco.client.mshost</connPropsKey>
+          <connPropsKey>jco.client.mysapsso2</connPropsKey>
+          <connPropsKey>jco.client.r3name</connPropsKey>
+          <connPropsKey>jco.client.saplogon_id</connPropsKey>
+          <connPropsKey>jco.client.snc_lib</connPropsKey>
+          <connPropsKey>jco.client.snc_mode</connPropsKey>
+          <connPropsKey>jco.client.snc_myname</connPropsKey>
+          <connPropsKey>jco.client.snc_partnername</connPropsKey>
+          <connPropsKey>jco.client.snc_qop</connPropsKey>
+          <connPropsKey>jco.client.tphost</connPropsKey>
+          <connPropsKey>jco.client.tpname</connPropsKey>
+          <connPropsKey>jco.client.trace</connPropsKey>
+          <connPropsKey>jco.client.use_guihost</connPropsKey>
+          <connPropsKey>jco.client.use_guiprogid</connPropsKey>
+          <connPropsKey>jco.client.use_guiserv</connPropsKey>
+          <connPropsKey>jco.client.use_sapgui</connPropsKey>
+          <connPropsKey>jco.client.x509cert</connPropsKey>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <sapInput>
+            <sapParameters>PUR_REQ_ID</sapParameters>
+            <sapFields key="PUR_REQ_ID">
+              <field>PUR_REQ_ID</field>
+            </sapFields>
+          </sapInput>
+          <sapOutput>
+            <sapParameters>RETURN_CODE</sapParameters>
+          </sapOutput>
+          <sapMethod name="" objectName="Z_SUP" objectType="" shortText="" function="Z_SUP_APPROVE_PR_WFW" description="" classVerb="" apiType="" method="" rfc="true" resultCheckerType="None">
+            <metaData>
+              <inputParams name="PUR_REQ_ID" dataType="CHAR" length="10" value=""/>
+              <outputParams name="RETURN_CODE" dataType="INT" length="4" optional="true" type="OUTPUT"/>
+            </metaData>
+          </sapMethod>
+        </definition>
+      </remoteOp>
+      <clientParameters name="PUR_REQ_ID" type="STRING" length="10" nullable="false">
+        <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+      </clientParameters>
+      <cachePolicyList>apply_operation_result</cachePolicyList>
+    </operations>
+    <operations name="rejectPRTest" type="other" remark="">
+      <parameters name="PUR_REQ_ID" type="STRING" length="10" nullable="false" toArgument="//@mObjects.1/@operations.1/@remoteOp/@metaData/@arguments.0">
+        <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+      </parameters>
+      <parameters name="DECISION_NOTE" type="STRING" toArgument="//@mObjects.1/@operations.1/@remoteOp/@metaData/@arguments.1">
+        <dataType xsi:type="uepmodels:EPrimitiveType" nullable="true" name="STRING" sqlType="12" javaType="java.lang.String"/>
+      </parameters>
+      <remoteOp profileName="SAP DEV" type="SAP">
+        <metaData>
+          <arguments nullable="false" syncParameter="//@mObjects.1/@operations.1/@clientParameters.0" defaultValue="" required="true" name="PUR_REQ_ID" type="STRING" isOperation="true" length="10">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </arguments>
+          <arguments syncParameter="//@mObjects.1/@operations.1/@clientParameters.1" defaultValueNull="true" required="true" name="DECISION_NOTE" type="STRING" isOperation="true">
+            <dataType xsi:type="uepmodels:EPrimitiveType" nullable="true" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </arguments>
+        </metaData>
+        <definition xsi:type="sapDatasourceExtension:ESAPOperationDefinition" userNamePk="//@personalizationKeys.0" passwordPk="//@personalizationKeys.1">
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsKey>jco.client.client</connPropsKey>
+          <connPropsKey>jco.client.lang</connPropsKey>
+          <connPropsKey>jco.client.codepage</connPropsKey>
+          <connPropsKey>jco.client.sysnr</connPropsKey>
+          <connPropsKey>jco.client.ashost</connPropsKey>
+          <connPropsKey>jco.client.abap_debug</connPropsKey>
+          <connPropsKey>jco.client.alias_user</connPropsKey>
+          <connPropsKey>jco.client.dest</connPropsKey>
+          <connPropsKey>jco.client.dsr</connPropsKey>
+          <connPropsKey>jco.client.extiddata</connPropsKey>
+          <connPropsKey>jco.client.extidtype</connPropsKey>
+          <connPropsKey>jco.client.getsso2</connPropsKey>
+          <connPropsKey>jco.client.group</connPropsKey>
+          <connPropsKey>jco.client.grt_data</connPropsKey>
+          <connPropsKey>jco.client.gwhost</connPropsKey>
+          <connPropsKey>jco.client.gwserv</connPropsKey>
+          <connPropsKey>jco.client.idle_timeout</connPropsKey>
+          <connPropsKey>jco.client.lcheck</connPropsKey>
+          <connPropsKey>jco.client.mshost</connPropsKey>
+          <connPropsKey>jco.client.mysapsso2</connPropsKey>
+          <connPropsKey>jco.client.r3name</connPropsKey>
+          <connPropsKey>jco.client.saplogon_id</connPropsKey>
+          <connPropsKey>jco.client.snc_lib</connPropsKey>
+          <connPropsKey>jco.client.snc_mode</connPropsKey>
+          <connPropsKey>jco.client.snc_myname</connPropsKey>
+          <connPropsKey>jco.client.snc_partnername</connPropsKey>
+          <connPropsKey>jco.client.snc_qop</connPropsKey>
+          <connPropsKey>jco.client.tphost</connPropsKey>
+          <connPropsKey>jco.client.tpname</connPropsKey>
+          <connPropsKey>jco.client.trace</connPropsKey>
+          <connPropsKey>jco.client.use_guihost</connPropsKey>
+          <connPropsKey>jco.client.use_guiprogid</connPropsKey>
+          <connPropsKey>jco.client.use_guiserv</connPropsKey>
+          <connPropsKey>jco.client.use_sapgui</connPropsKey>
+          <connPropsKey>jco.client.x509cert</connPropsKey>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <outputRecords name="&lt;HEADER PARAMETERS>">
+            <metaData>
+              <columnInfos nullable="false" name="RETURN_CODE" type="INT"/>
+            </metaData>
+          </outputRecords>
+          <sapInput>
+            <sapParameters>PUR_REQ_ID</sapParameters>
+            <sapParameters>DECISION_NOTE</sapParameters>
+            <sapFields key="PUR_REQ_ID">
+              <field>PUR_REQ_ID</field>
+            </sapFields>
+            <sapFields key="DECISION_NOTE">
+              <field>DECISION_NOTE</field>
+            </sapFields>
+          </sapInput>
+          <sapOutput>
+            <sapParameters>RETURN_CODE</sapParameters>
+          </sapOutput>
+          <sapMethod name="" objectName="Z_SUP" objectType="" shortText="" function="Z_SUP_REJECT_PR_WFW" description="" classVerb="" apiType="" method="" rfc="true" resultCheckerType="None">
+            <metaData>
+              <inputParams name="PUR_REQ_ID" dataType="CHAR" length="10" value=""/>
+              <inputParams name="DECISION_NOTE" dataType="STRING" optional="true"/>
+              <outputParams name="RETURN_CODE" dataType="INT" length="4" optional="true" type="OUTPUT"/>
+            </metaData>
+          </sapMethod>
+        </definition>
+      </remoteOp>
+      <clientParameters name="PUR_REQ_ID" type="STRING" length="10" nullable="false">
+        <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+      </clientParameters>
+      <clientParameters name="DECISION_NOTE" type="STRING" length="200">
+        <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+      </clientParameters>
+      <cachePolicyList>apply_operation_result</cachePolicyList>
+    </operations>
+    <read>
+      <remoteOp profileName="SAP DEV" type="SAP">
+        <metaData>
+          <columnInfos nullable="false" name="RETURN.USER_ID" type="STRING" length="12"/>
+          <columnInfos nullable="false" name="RETURN.WI_ID" type="STRING" length="12"/>
+          <columnInfos nullable="false" name="RETURN.TASK_OBJ" type="STRING" length="10"/>
+          <columnInfos nullable="false" name="RETURN.MANDT" type="STRING" length="3"/>
+          <columnInfos nullable="false" name="RETURN.WI_TYPE" type="STRING" length="1"/>
+          <columnInfos name="RETURN.WI_CD" type="DATE"/>
+          <columnInfos nullable="false" name="RETURN.WI_TEXT" type="STRING" length="120"/>
+          <columnInfos nullable="false" name="RETURN.TEXT_HEADER" type="STRING" length="256"/>
+          <columnInfos nullable="false" name="RETURN.CATID" type="STRING" length="2"/>
+          <columnInfos nullable="false" name="RETURN.INSTID" type="STRING" length="70"/>
+          <columnInfos nullable="false" name="RETURN.TYPEID" type="STRING" length="32"/>
+          <columnInfos nullable="false" name="RETURN.TYPE" type="STRING" length="256"/>
+          <columnInfos nullable="false" name="RETURN.TOP_WI_ID" type="STRING" length="12"/>
+          <columnInfos nullable="false" name="RETURN.RLWRT" type="DECIMAL"/>
+          <columnInfos nullable="false" name="RETURN.ERNAM" type="STRING" length="12"/>
+          <columnInfos name="RETURN.BADAT" type="DATE"/>
+          <columnInfos name="RETURN.DATE_START" type="DATE"/>
+          <columnInfos name="RETURN.DATE_END" type="DATE"/>
+        </metaData>
+        <definition xsi:type="sapDatasourceExtension:ESAPOperationDefinition" userNamePk="//@personalizationKeys.0" passwordPk="//@personalizationKeys.1">
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsValue></connPropsValue>
+          <connPropsKey>jco.client.client</connPropsKey>
+          <connPropsKey>jco.client.lang</connPropsKey>
+          <connPropsKey>jco.client.codepage</connPropsKey>
+          <connPropsKey>jco.client.sysnr</connPropsKey>
+          <connPropsKey>jco.client.ashost</connPropsKey>
+          <connPropsKey>jco.client.abap_debug</connPropsKey>
+          <connPropsKey>jco.client.alias_user</connPropsKey>
+          <connPropsKey>jco.client.dest</connPropsKey>
+          <connPropsKey>jco.client.dsr</connPropsKey>
+          <connPropsKey>jco.client.extiddata</connPropsKey>
+          <connPropsKey>jco.client.extidtype</connPropsKey>
+          <connPropsKey>jco.client.getsso2</connPropsKey>
+          <connPropsKey>jco.client.group</connPropsKey>
+          <connPropsKey>jco.client.grt_data</connPropsKey>
+          <connPropsKey>jco.client.gwhost</connPropsKey>
+          <connPropsKey>jco.client.gwserv</connPropsKey>
+          <connPropsKey>jco.client.idle_timeout</connPropsKey>
+          <connPropsKey>jco.client.lcheck</connPropsKey>
+          <connPropsKey>jco.client.mshost</connPropsKey>
+          <connPropsKey>jco.client.mysapsso2</connPropsKey>
+          <connPropsKey>jco.client.r3name</connPropsKey>
+          <connPropsKey>jco.client.saplogon_id</connPropsKey>
+          <connPropsKey>jco.client.snc_lib</connPropsKey>
+          <connPropsKey>jco.client.snc_mode</connPropsKey>
+          <connPropsKey>jco.client.snc_myname</connPropsKey>
+          <connPropsKey>jco.client.snc_partnername</connPropsKey>
+          <connPropsKey>jco.client.snc_qop</connPropsKey>
+          <connPropsKey>jco.client.tphost</connPropsKey>
+          <connPropsKey>jco.client.tpname</connPropsKey>
+          <connPropsKey>jco.client.trace</connPropsKey>
+          <connPropsKey>jco.client.use_guihost</connPropsKey>
+          <connPropsKey>jco.client.use_guiprogid</connPropsKey>
+          <connPropsKey>jco.client.use_guiserv</connPropsKey>
+          <connPropsKey>jco.client.use_sapgui</connPropsKey>
+          <connPropsKey>jco.client.x509cert</connPropsKey>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK type="STRING">
+            <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+          </connPropsPK>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <connPropsPK/>
+          <sapInput/>
+          <sapOutput>
+            <sapTables>RETURN</sapTables>
+          </sapOutput>
+          <sapMethod name="" objectName="Z_SUP" objectType="" shortText="" function="Z_SUP_GET_PR_LIST" description="" classVerb="" apiType="" method="" rfc="true" resultCheckerType="None">
+            <metaData>
+              <inputParams name="USER_ID" dataType="CHAR" length="12" optional="true"/>
+              <inputParams name="MANDT" dataType="CHAR" length="3" optional="true"/>
+              <tables name="RETURN" dataType="TABLE" table="true" length="18" optional="true" type="OUTPUT" selectedForOutput="true">
+                <columns name="USER_ID" description="User Name in User Master Record" type="CHAR" length="12"/>
+                <columns name="WI_ID" description="Work item ID" type="NUM" length="12"/>
+                <columns name="TASK_OBJ" description="Concatenation of Object Type and Object ID" type="CHAR" length="10"/>
+                <columns name="MANDT" description="Client" type="CHAR" length="3"/>
+                <columns name="WI_TYPE" description="Work item type" type="CHAR" length="1"/>
+                <columns name="WI_CD" description="Creation Date of Work Item" type="DATE" length="8"/>
+                <columns name="WI_TEXT" description="Work item text" type="CHAR" length="120"/>
+                <columns name="TEXT_HEADER" description="Data element for WWI callback" type="CHAR" length="256"/>
+                <columns name="CATID" description="Category of Objects in Persistent Object References" type="CHAR" length="2"/>
+                <columns name="INSTID" description="Instance Ident. in BOR Compat. Persistent Object References" type="CHAR" length="70"/>
+                <columns name="TYPEID" description="Type of Objects in Persistent Object References" type="CHAR" length="32"/>
+                <columns name="TYPE" description="Data element for WWI callback" type="CHAR" length="256"/>
+                <columns name="TOP_WI_ID" description="Workflow: Unique ID of Top-Level Instance (6.1/get)" type="NUM" length="12"/>
+                <columns name="RLWRT" description="Total value at time of release" type="BCD" length="8"/>
+                <columns name="ERNAM" description="Name of Person who Created the Object" type="CHAR" length="12"/>
+                <columns name="BADAT" description="Requisition (Request) Date" type="DATE" length="8"/>
+                <columns name="DATE_START" description="" type="DATE" length="8"/>
+                <columns name="DATE_END" description="" type="DATE" length="8"/>
+              </tables>
+            </metaData>
+          </sapMethod>
+        </definition>
+      </remoteOp>
+    </read>
+    <namedQuery sqlQuery="SELECT x.* FROM PurchaseReqList x &#xA;WHERE x.INSTID = :INSTID " name="findByPrimaryKey" isSystem="true">
+      <parameters name="INSTID" type="STRING" length="70" nullable="false" fromAttribute="//@mObjects.1/@attributes.8">
+        <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+      </parameters>
+    </namedQuery>
+    <publish/>
+    <subscribe>
+      <downloadData/>
+    </subscribe>
+  </mObjects>
+  <rootPackage name="/" mObjects="_DEky8BQVEeS2Gpg2KUvYzg _RfvcABQVEeS2Gpg2KUvYzg"/>
+  <personalizationKeys nullable="false" name="username" type="STRING">
+    <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+  </personalizationKeys>
+  <personalizationKeys nullable="false" name="password" type="STRING">
+    <dataType xsi:type="uepmodels:EPrimitiveType" name="STRING" sqlType="12" javaType="java.lang.String"/>
+  </personalizationKeys>
+  <publications name="Default" mObjects="_RfvcABQVEeS2Gpg2KUvYzg _DEky8BQVEeS2Gpg2KUvYzg" checkInterval="600" default="true"/>
+  <caches name="Default" default="true" mObjects="_DEky8BQVEeS2Gpg2KUvYzg _RfvcABQVEeS2Gpg2KUvYzg">
+    <policy xsi:type="uepmodels:EOnDemandPolicy">
+      <coherenceWindow/>
+    </policy>
+  </caches>
+</uepmodels:EMODiagram>
